@@ -21,146 +21,103 @@
                 </blockquote>
                 <div class="meal-search-box">
                     <input type="text" class="search-control" placeholder="Enter a recipe name" id="search-input">
-                    <button type="submit" class="search-btn btn" id="search-btn">
+                    <button type="button" class="search-btn btn" id="search-btn">
                         <i class="fas fa-search"></i> Search
                     </button>
                 </div>
-                
+            </div>
 
-            <!-- Meal Results Section -->
-            <div class="meal-result" id="meal-result">
-                <h2 class="title">Your Search Results:</h2>
-                <div id="meal">
-                    <!-- Recipe Items -->
-                    <div class="meal-item" data-name="Burger" 
-                         data-category="Fast Food" 
-                         data-instructions="Toast buns, grill patty, assemble with vegetables and sauce." 
-                         data-ingredients="Bread Buns, Beef Patty, Lettuce, Tomato, Cheese, Sauce" 
-                         data-preparation="Grill the patty for 5 minutes, toast the buns, and assemble with fresh vegetables.">
-                        <div class="meal-img">
-                            <img src="https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg" alt="Burger">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Burger</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+            <!-- Meal Items Section (No Results Section) -->
+            <div class="meal-items" id="meal-items">
+                <div class="meal-item" data-name="Burger" 
+                     data-category="Fast Food" 
+                     data-instructions="Toast buns, grill patty, assemble with vegetables and sauce." 
+                     data-ingredients="Bread Buns, Beef Patty, Lettuce, Tomato, Cheese, Sauce" 
+                     data-preparation="Grill the patty for 5 minutes, toast the buns, and assemble with fresh vegetables.">
+                    <div class="meal-img">
+                        <img src="https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg" alt="Burger">
                     </div>
-
-                    <div class="meal-item" data-name="Pasta" 
-                         data-category="Italian Cuisine" 
-                         data-instructions="Boil the pasta, prepare the sauce, mix, and serve." 
-                         data-ingredients="Pasta, Tomatoes, Garlic, Olive Oil, Parmesan Cheese, Basil" 
-                         data-preparation="Cook pasta in salted water, prepare tomato-garlic sauce, and toss with the sauce.">
-                        <div class="meal-img">
-                            <img src="https://www.inspiredtaste.net/wp-content/uploads/2019/04/Vegetable-Baked-Pasta-Recipe-1200.jpg" alt="Pasta">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Pasta</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+                    <div class="meal-name">
+                        <h3>Burger</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
                     </div>
+                </div>
 
-                    <div class="meal-item" data-name="Salad" 
-                         data-category="Healthy Food" 
-                         data-instructions="Chop vegetables, toss with dressing, and serve fresh." 
-                         data-ingredients="Cucumber, Tomato, Onion, Lemon Juice, Salt, Pepper" 
-                         data-preparation="Chop all vegetables evenly, mix in a bowl, and drizzle with lemon juice.">
-                        <div class="meal-img">
-                            <img src="https://www.eatingwell.com/thmb/xzR1INWu-qKNgOqwG4cIMERqsMo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eat-the-rainbow-chopped-salad-with-basil-mozzarella-beauty-184-278133-4000x4000-ef8f3f0ad7134d2b860c51f5e7b38ce5.jpg" alt="Salad">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Salad</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+                <div class="meal-item" data-name="Pasta" 
+                     data-category="Italian Cuisine" 
+                     data-instructions="Boil the pasta, prepare the sauce, mix, and serve." 
+                     data-ingredients="Pasta, Tomatoes, Garlic, Olive Oil, Parmesan Cheese, Basil" 
+                     data-preparation="Cook pasta in salted water, prepare tomato-garlic sauce, and toss with the sauce.">
+                    <div class="meal-img">
+                        <img src="https://www.inspiredtaste.net/wp-content/uploads/2019/04/Vegetable-Baked-Pasta-Recipe-1200.jpg" alt="Pasta">
                     </div>
-
-                    <div class="meal-item" data-name="Soup" 
-                         data-category="Comfort Food" 
-                         data-instructions="Boil vegetables, blend into a puree, and season." 
-                         data-ingredients="Carrots, Potatoes, Onions, Garlic, Vegetable Broth, Herbs" 
-                         data-preparation="Cook vegetables until soft, blend into a puree, and add broth for desired consistency.">
-                        <div class="meal-img">
-                            <img src="https://www.cookingclassy.com/wp-content/uploads/2014/10/vegetable-soup-7.jpg" alt="Soup">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Soup</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+                    <div class="meal-name">
+                        <h3>Pasta</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
                     </div>
+                </div>
 
-                    <div class="meal-item" data-name="Sandwich" 
-                         data-category="Snack" 
-                         data-instructions="Assemble bread, fillings, and grill if desired." 
-                         data-ingredients="Bread, Chicken, Cheese, Tomato, Lettuce, Mayonnaise" 
-                         data-preparation="Layer ingredients between bread slices and grill for 3-5 minutes for added crispness.">
-                        <div class="meal-img">
-                            <img src="https://wiproappliances.com/cdn/shop/articles/Veg_grilled_cheese_sandwich.jpg?v=1714126819" alt="Sandwich">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Sandwich</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+                <div class="meal-item" data-name="Salad" 
+                     data-category="Healthy Food" 
+                     data-instructions="Chop vegetables, toss with dressing, and serve fresh." 
+                     data-ingredients="Cucumber, Tomato, Onion, Lemon Juice, Salt, Pepper" 
+                     data-preparation="Chop all vegetables evenly, mix in a bowl, and drizzle with lemon juice.">
+                    <div class="meal-img">
+                        <img src="https://www.eatingwell.com/thmb/xzR1INWu-qKNgOqwG4cIMERqsMo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eat-the-rainbow-chopped-salad-with-basil-mozzarella-beauty-184-278133-4000x4000-ef8f3f0ad7134d2b860c51f5e7b38ce5.jpg" alt="Salad">
                     </div>
+                    <div class="meal-name">
+                        <h3>Salad</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
+                    </div>
+                </div>
 
-                    <div class="meal-item" data-name="Dessert" 
-                         data-category="Sweet Dish" 
-                         data-instructions="Prepare syrup, soak dessert pieces, and chill." 
-                         data-ingredients="Milk, Sugar, Cardamom, Paneer, Saffron" 
-                         data-preparation="Make a milk-based syrup, soak paneer dumplings, and refrigerate for 2 hours before serving.">
-                        <div class="meal-img">
-                            <img src="https://palatesdesire.com/wp-content/uploads/2022/09/Rasmalai-recipe@palates-desire.jpg" alt="Dessert">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Dessert</h3>
-                            <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
-                        </div>
+                <div class="meal-item" data-name="Soup" 
+                     data-category="Comfort Food" 
+                     data-instructions="Boil vegetables, blend into a puree, and season." 
+                     data-ingredients="Carrots, Potatoes, Onions, Garlic, Vegetable Broth, Herbs" 
+                     data-preparation="Cook vegetables until soft, blend into a puree, and add broth for desired consistency.">
+                    <div class="meal-img">
+                        <img src="https://www.cookingclassy.com/wp-content/uploads/2014/10/vegetable-soup-7.jpg" alt="Soup">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Soup</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
+                    </div>
+                </div>
+
+                <div class="meal-item" data-name="Sandwich" 
+                     data-category="Snack" 
+                     data-instructions="Assemble bread, fillings, and grill if desired." 
+                     data-ingredients="Bread, Chicken, Cheese, Tomato, Lettuce, Mayonnaise" 
+                     data-preparation="Layer ingredients between bread slices and grill for 3-5 minutes for added crispness.">
+                    <div class="meal-img">
+                        <img src="https://wiproappliances.com/cdn/shop/articles/Veg_grilled_cheese_sandwich.jpg?v=1714126819" alt="Sandwich">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Sandwich</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
+                    </div>
+                </div>
+
+                <div class="meal-item" data-name="Dessert" 
+                     data-category="Sweet Dish" 
+                     data-instructions="Prepare syrup, soak dessert pieces, and chill." 
+                     data-ingredients="Milk, Sugar, Cardamom, Paneer, Saffron" 
+                     data-preparation="Make a milk-based syrup, soak paneer dumplings, and refrigerate for 2 hours before serving.">
+                    <div class="meal-img">
+                        <img src="https://palatesdesire.com/wp-content/uploads/2022/09/Rasmalai-recipe@palates-desire.jpg" alt="Dessert">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Dessert</h3>
+                        <button class="recipe-btn" onclick="showRecipeDetails(this)">Get Recipe</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Login Modal -->
-    <div id="login-modal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2>Sign In</h2>
-            <form id="login-form" onsubmit="signIn(event)">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit" class="btn">Sign In</button>
-            </form>
-        </div>
-    </div>
-
     <script>
-        // Show Login Modal
-        function showLogin() {
-            document.getElementById("login-modal").style.display = "block";
-        }
-
-        // Close Modals
-        function closeModal() {
-            document.getElementById("login-modal").style.display = "none";
-            document.getElementById("recipe-modal").style.display = "none";
-        }
-
-        // Handle Sign In
-        function signIn(event) {
-            event.preventDefault(); // Prevent form submission
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            // Display alert
-            alert(`Sign In successful! Welcome, ${username}.`);
-
-            // Close Login Modal
-            closeModal();
-        }
-
-        // Show Recipe Details (you may add more functionality here)
+        // Show Recipe Details
         function showRecipeDetails(button) {
             const mealItem = button.closest('.meal-item');
             const name = mealItem.dataset.name;
@@ -171,6 +128,21 @@
 
             alert(`Recipe: ${name}\nCategory: ${category}\nIngredients: ${ingredients}\nInstructions: ${instructions}\nPreparation: ${preparation}`);
         }
+
+        // Search Button Functionality
+        document.getElementById('search-btn').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const mealItems = document.querySelectorAll('.meal-item');
+            
+            mealItems.forEach(item => {
+                const mealName = item.dataset.name.toLowerCase();
+                if (mealName.includes(query)) {
+                    item.style.display = "block"; // Show item if it matches the query
+                } else {
+                    item.style.display = "none"; // Hide item if it does not match the query
+                }
+            });
+        });
     </script>
 </body>
 </html>
