@@ -23,4 +23,11 @@ Implement meal planning and grocery list features.
 Integrate user reviews and ratings for recipes.
 Support for multi-language options.
 
+Contact
+For queries or feedback, reach out to:
+
+Developer: Gayathri M
+Email: jayasrimathi2007@gmail.com
+Phone: +91 9025115531
+
 
